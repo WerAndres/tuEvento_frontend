@@ -290,4 +290,13 @@ form .error {
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
     overflow: auto;
 }
+input.form-control {
+    border: 1px solid #CED4DA;
+    width: 100%;
+}
+.vdp-datepicker.form-control {
+    border: 1px solid #CED4DA;
+    width: 100%;
+    padding: 7px;
+}
 </style>
