@@ -15,7 +15,7 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown right>
           <!-- Using 'button-content' slot -->
-          <template slot="button-content"><em><div class="rol">{{rol}}: </div><div class="nameUser">{{nameUser}}</div><img class="avatar" :src="this.img || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRz0P8-U_r5zM_duGMB4JY0SLpk6hvbT5aJ6fty0cxlHblGOSr'"/></em></template>
+          <template slot="button-content"><em><div class="rol">{{rol}}: </div><div class="nameUser">{{nameUser}}</div><img class="avatar" :src="this.img || 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnEwPTonHDART0alo_H-SykqZVHxp_6579WDq1euecigKvlxW3'"/></em></template>
           <b-dropdown-item @click="goPerfil()">Profile</b-dropdown-item>
           <b-dropdown-item @click="logout()" href="#">Sign Out</b-dropdown-item>
         </b-nav-item-dropdown>
