@@ -1,14 +1,14 @@
 <template>
   <div>
   <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">tuEvento</b-navbar-brand>
+    <b-navbar-brand @click="goPrincipal()">tuEvento.com</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
+        <b-nav-item @click="goEventos()">Eventos</b-nav-item>
+        <b-nav-item @click="goMisBoletos()">Mis Boletos</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
@@ -35,6 +35,15 @@ export default {
     },
     goPerfil () {
       this.$router.push('/perfil')
+    },
+    goPrincipal () {
+      this.$router.push('/principal')
+    },
+    goEventos () {
+      this.$router.push('/eventos')
+    },
+    goMisBoletos () {
+      this.$router.push('/mis-boletos')
     },
     getUnits: function () {
       let data = JSON.parse(localStorage.getItem('user'))

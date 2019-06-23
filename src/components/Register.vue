@@ -14,6 +14,11 @@
             <div v-if="!isLoading" class="col-md-12 col-xs-12 login_control">
               <form id="registro" @submit.prevent="validateBeforeSubmit()">
                 <div class="control">
+                    <div class="label">Nombre:</div>
+                    <input type="text" v-validate="'required'" name="nombre" v-model="user.nombre_usuario" class="form-control" placeholder="Nombre" />
+                    <span class="error" v-if="errors.has('nombre')">{{ errors.first('nombre') }}</span>
+                </div>
+                <div class="control">
                   <div class="label">Tipo de usuario:</div>
                   <b-form-select  v-validate="'required'" name="tipoUsuario" v-model="user.tipo_usuario" :options="optionsUsuario">
                     <template slot="first">
@@ -127,6 +132,7 @@ export default {
       modalOkShow: false,
       isLoading: false,
       user: {
+        nombre_usuario: '',
         tipo_usuario: '',
         identificacion_usuario: '',
         tipo_identificacion: '',

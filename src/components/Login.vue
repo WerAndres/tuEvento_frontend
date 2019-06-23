@@ -64,7 +64,7 @@ export default {
           this.user.pass_usuario = md5(this.user.pass)
           this.user.pass = ''
           // console.log('User: ' + JSON.stringify(this.user))
-          return LoginService.post(this.user).then((data) => {
+          return LoginService.auth(this.user).then((data) => {
             console.log('data: ' + JSON.stringify(data))
             if (typeof data.error !== 'undefined') {
               this.modalErrorShow = true

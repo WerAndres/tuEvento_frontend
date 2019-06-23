@@ -23,6 +23,9 @@ export default {
 #app {
 
 }
+.navbar-brand:hover{
+  cursor: pointer;
+}
 nav.bg-info {
     background: #21375f !important;
 }
@@ -245,13 +248,46 @@ form .error {
 .modal-body {
     display: inline-block;
 }
-.containerFontAwesome.errorFA svg{
+.containerFontAwesome.errorFA{
   color: #F00;
 }
-.containerFontAwesome.okFA svg{
+.containerFontAwesome.okFA{
   color: #079a44;
 }
-.containerFontAwesome.largeFA svg{
+.containerFontAwesome.btnFA{
+  color: #21375e;
+}
+.containerFontAwesome.btnFA:hover{
+  color: #4383f5;
+  cursor: pointer;
+}
+.containerFontAwesome.largeFA{
   font-size: 50px;
+}
+.containerFontAwesome.smallFA {
+  font-size: 17px;
+}
+.containerFontAwesome.smallFA:hover{
+  font-size: 18px;
+}
+.titleBox{
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    background: #29a1d4;
+    color: #FAFAFA;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.containerEventos {
+    padding: 10px;
+    background: #F0F0F0;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+    overflow: auto;
 }
 </style>
